@@ -24,7 +24,7 @@ To use this navbar in your project, follow these steps:
 
 ## Credits
 
-This navbar was created by [LakinduNimesh]([https://github.com/LakiNim](https://github.com/LakinduNimesh)). Feel free to use and modify it in your projects. If you find it helpful, consider giving credit or starring the repository.
+This navbar was created by [LakinduNimesh](https://github.com/LakinduNimesh). Feel free to use and modify it in your projects. If you find it helpful, consider giving credit or starring the repository.
 
 ## License
 
