@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #c5aa6a;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+header{
+  display: flex;
+  background-color: #2f2626;
+  justify-content: space-around;
+  padding: 1rem 0;
+  align-items: center;
+}
+header .logo a{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+header .logo a span{
+  font-family: 'Dancing Script', san-serif;
+  color: #c5aa6a;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.nav{
+  display: flex;
+  align-items: center;
+}
+.nav_list{
+  display: flex;
+  align-items: center;
+}
+.nav_item{
+  margin: 0 8px;
+}
+.nav_link{
+  padding: 10px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.nav_link:hover{
+  color: #c5aa6a;
+  text-shadow: 0 5px 15px #c5aa6a9d;
+}
+
+.hire_me {
+  padding: 10px;
+  color: #000;
+  background-color: #c5aa6a;
+  font-size: 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.hire_me:hover{
+  color: #2f2626;
+  box-shadow: 0 5px 15px #c5aa6a9d;
+}
+
+#header_close,
+#header_toggle{
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  header{
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 28px;
+    height: 80px;
+  }
+  .logo a{
+    font-size: 1.2rem;
+  }
+  #header_toggle{
+    display: inline;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.6s;
+  }
+  #header_toggle:hover{
+    cursor: pointer;
+    box-shadow: 0 5px 15px #c5aa6a9d;
+  }
+
+  #header_close{
+    position: absolute;
+    background-color: transparent;
+    color: #fff;
+    top: 20px;
+    right: 24px;
+    font-size: 18px;
+    display: block;
+    transition: 0.6s;
+  }
+  #header_close:hover{
+    cursor: pointer;
+    box-shadow: 0 5px 15px #c5aa6a9d;
+  }
+  
+  .nav{
+    position: fixed;
+    top: -100%;
+    right: 0;
+    background-color: #2f2626;
+    align-items: center;
+    color: #fff;
+    width: 60%;
+    height: 100vh;
+    z-index: 100; 
+    transition: 0.6s;
+  }
+
+  .nav_list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav_item{
+    margin: 1.5rem;
+  }
+  .show{
+    top: 0;
+  }
+}
